@@ -1,0 +1,129 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+nav h1 {
+    font-size: 1.4rem;
+}
+
+/* Main Container */
+.container {
+    height: 80vh;
+    background-color: #f4f7fa;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Message Styles */
+.message {
+    max-width: 70%;
+    padding: 12px 18px;
+    margin: 5px 0;
+    border-radius: 12px;
+    font-size: 1rem;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.message.left {
+    align-self: flex-start;
+    background-color: #ffffff;
+    border-left: 4px solid #667eea;
+}
+
+.message.right {
+    align-self: flex-end;
+    background-color: #e2e8f0;
+    border-right: 4px solid #764ba2;
+}
+
+/* Send Box */
+.send {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+}
+
+#send-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+}
+
+#messageInp {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+#messageInp:focus {
+    border-color: #667eea;
+}
+
+.btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    margin-left: 10px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* Smooth message appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scrollbar styling */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
