@@ -42,14 +42,14 @@ A real-time group chat application built with **Node.js**, **Socket.IO**, and **
 ## ⚙️ Setup Instructions
 
 1. **Clone the repository**
-   git clone https://github.com/your-username/chat-app.git
-   cd chat-app
+   "git clone https://github.com/your-username/chat-app.git"
+   "cd chat-app"
 2. Install dependencies
-   npm install
+   "npm install"
 3. Run the server
-   node server.js
+   "node server.js"
 4. Visit the app
-   Open your browser at: http://localhost:3000
+   Open your browser at:       "http://localhost:3000"
 
 ---
 
